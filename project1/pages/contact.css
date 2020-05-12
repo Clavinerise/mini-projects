@@ -1,0 +1,48 @@
+.main-text-sm {
+    padding: 3em 0 1em;
+    color: white;
+    font-size: 30px;
+    /* text-align: left; */
+    /* text-decoration: underline coral; */
+}
+
+.main-body {
+    text-align: left;
+    padding-left: 3rem;
+}
+
+.main-body p {
+    color: white;
+    max-width: 400px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.5em;
+}
+
+.media-accts {
+    padding-top: 1.5rem;
+}
+
+.fa, .fab {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    padding-right: 1rem;
+}
+
+.underbar {
+    width: 60px;
+    height: 5px;
+    margin: .5em 70% 0;
+    background: #fff;
+    transition: 0.5s ease;
+}
+
+.topnav li:nth-child(1):hover ~ .underbar {
+    margin-left: 1em;
+    width: 50px;
+}
+.topnav li:nth-child(2):hover ~ .underbar {
+    margin-left: 37%;
+    width: 50px;
+}

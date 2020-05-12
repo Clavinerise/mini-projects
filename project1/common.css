@@ -37,12 +37,6 @@ body {
     transition-duration: 0.2s;
 }
 
-.topnav ul a:hover {
-    /* color: #333; */
-    text-decoration: none;
-    border-bottom: 2px solid #333;
-}
-
 .topnav-right {
     float: right;
 }
@@ -107,6 +101,22 @@ body {
     border-radius: 5px;
 }
 
+.underbar {
+    width: 50px;
+    height: 5px;
+    margin: .5em 1em 0;
+    background: #fff;
+    transition: 0.5s ease;
+}
+
+.topnav li:nth-child(2):hover ~ .underbar {
+    margin-left: 37%;
+}
+.topnav li:nth-child(3):hover ~ .underbar {
+    margin-left: 70%;
+    width: 60px;
+}
+
 .topnav .hamburger {
     display: none;
 }
@@ -138,7 +148,7 @@ body {
         display: block;
         position: absolute;
         right: 1rem;
-        top: 2rem;
+        top: 1.5rem;
     }
     .topnav ul {
         display: none;
