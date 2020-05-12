@@ -1,0 +1,152 @@
+* {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: teal;
+}
+.topnav {
+    /* background: teal; */
+    /* border: 1px solid black; */
+}
+
+.topnav ul {
+    list-style-type: none;
+    /* border: 1px solid black; */
+    padding: 3rem 1rem 0;
+}
+
+.topnav li {
+    display: inline;
+    padding: 1rem;
+}
+
+.nav-title {
+    color: white;
+    padding: 2rem 2rem 0;
+    /* border: 1px solid black; */
+    display: inline-block;
+}
+
+.topnav a {
+    color: white;
+    text-decoration: none;
+    border-bottom: transparent;
+    transition-duration: 0.2s;
+}
+
+.topnav ul a:hover {
+    /* color: #333; */
+    text-decoration: none;
+    border-bottom: 2px solid #333;
+}
+
+.topnav-right {
+    float: right;
+}
+
+.main-body {
+    width: 100%;
+    display: block;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+.main-text {
+    padding: 1em;
+    color: white;
+    font-size: 50px;
+    /* text-decoration: underline coral; */
+}
+
+.plus {
+    margin: 10px auto;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: .5em;
+    /* display: inline-block; */
+    background-color: transparent;
+    border: 1px white solid;
+    color: white;
+    transition-duration: 0.2s;
+}
+
+.plus:hover {
+    background-color: white;
+    color: teal;
+}
+
+.count-text {
+    width: 100px;
+    font-size: 16px;
+    text-align: right;
+    margin: 0;
+    padding: 8px;
+    color: #333;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.count-text::-webkit-outer-spin-button,
+.count-text::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.count-text input[type-number] {
+    -moz-appearance: textfield;
+}
+
+.bar {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    border-radius: 5px;
+}
+
+.topnav .hamburger {
+    display: none;
+}
+
+.footer {
+    position: fixed;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-height: 50px;
+    z-index: 100;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.footer-text {
+    padding: 1em;
+    color: teal;
+    text-align: center;
+    font-weight: 300;
+    font-size: 12px;
+    /* border: 1px solid black; */
+}
+
+@media screen and (max-width: 600px) {
+    .topnav .hamburger {
+        display: block;
+        position: absolute;
+        right: 1rem;
+        top: 2rem;
+    }
+    .topnav ul {
+        display: none;
+    }
+    .main-text {
+        font-size: 30px;
+    }
+    .footer {
+        display: none;
+    }
+}
