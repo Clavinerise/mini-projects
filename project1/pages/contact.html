@@ -34,13 +34,30 @@
             <p>I'd love to hear from you. If you ever want to collaborate on a game project, or a need someone to learn new tech with, send me a message. The world is too vast to tread alone.
             </p>
             <div class="media-accts">
-                <a href="https://www.reddit.com/user/Clavinerise" class="fa fa-reddit"></a>
-                <a href="https://github.com/Clavinerise" class="fa fa-github"></a>
-                <i href="#" class='fab fa-discord'></i>
+                <a href="https://www.reddit.com/user/Clavinerise" target="_blank" class="fa fa-reddit"></a>
+                <a href="https://github.com/Clavinerise" target="_blank" class="fa fa-github"></a>
+                <div class='fab fa-discord popup' onclick="showPopup()" id="discord-icon">
+                    <span class="popuptext" id="myPopup">Clavinerise#1424</span>
+                </div>
             </div>
     </div>
     <footer class="footer">
         <div class="footer-text">Made by Clavinerise, 2020</div>
     </footer>
+
+    <script>
+        let popup = document.getElementById("myPopup");
+        let discord = document.getElementById("discord-icon");
+        function showPopup() {
+            // let popup = document.getElementById("myPopup");
+            // popup.classList.toggle("show");
+            popup.style.visibility = "visible";
+        }
+        window.onclick = function(event) {
+            if(popup.style.visibility == "visible" && event.target != discord && event.target != popup) {
+                popup.style.visibility = "hidden";
+            }
+        }
+    </script>
 </body>
 </html>

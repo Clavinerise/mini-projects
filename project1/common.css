@@ -8,8 +8,8 @@ body {
     background: teal;
 }
 .topnav {
-    /* background: teal; */
-    /* border: 1px solid black; */
+    box-shadow: 0px 3px 5px 2px rgba(0, 0, 0, 0.1);
+    min-height: 80px;
 }
 
 .topnav ul {
