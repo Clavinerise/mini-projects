@@ -14,20 +14,12 @@ body {
 
 .topnav ul {
     list-style-type: none;
-    /* border: 1px solid black; */
     padding: 3rem 1rem 0;
 }
 
 .topnav li {
     display: inline;
     padding: 1rem;
-}
-
-.nav-title {
-    color: white;
-    padding: 2rem 2rem 0;
-    /* border: 1px solid black; */
-    display: inline-block;
 }
 
 .topnav a {
@@ -41,11 +33,16 @@ body {
     float: right;
 }
 
+.nav-title {
+    color: white;
+    padding: 2rem 2rem 0;
+    display: inline-block;
+}
+
 .main-body {
     width: 100%;
     display: block;
     text-align: center;
-    /* border: 1px solid black; */
 }
 
 .main-text {
@@ -55,21 +52,24 @@ body {
     /* text-decoration: underline coral; */
 }
 
-.plus {
+.main-counter button {
     margin: 10px auto;
     border-radius: 5px;
     font-size: 16px;
     padding: .5em;
-    /* display: inline-block; */
     background-color: transparent;
     border: 1px white solid;
     color: white;
     transition-duration: 0.2s;
 }
 
-.plus:hover {
+.main-counter button:hover {
     background-color: white;
     color: teal;
+}
+
+.main-counter .reset {
+    border: none;
 }
 
 .count-text {
@@ -89,7 +89,7 @@ body {
     margin: 0;
 }
 
-.count-text input[type-number] {
+input[type=number] {
     -moz-appearance: textfield;
 }
 
@@ -140,7 +140,6 @@ body {
     text-align: center;
     font-weight: 300;
     font-size: 12px;
-    /* border: 1px solid black; */
 }
 
 @media screen and (max-width: 600px) {
@@ -156,6 +155,12 @@ body {
     .main-text {
         font-size: 30px;
     }
+    .footer {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 600px) {
     .footer {
         display: none;
     }
